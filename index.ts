@@ -7,12 +7,13 @@ import inquirer from "inquirer";
 // 3) Computer user input with Computer generated number and show the result
 
 const randomNumber = Math.floor(Math.random() * 6 +1);
-console.log(randomNumber)
+console.log("Well come to Number Guessing Game");
 const answares = await inquirer.prompt([
     {
         name: "userGuessedNumber",
         type: "Number",
         message: "Please Guesse a Number between 1-6 ",
+        
     },
 ]);
 
